@@ -673,6 +673,7 @@ h2 {
   color: #ffffff;
   text-align: center;
   font: 700 16px/150% "Lato", sans-serif;
+  border: none;
 }
 /* Journey end */
 
@@ -780,3 +781,11 @@ h2 {
 }
 
 /* Footer End */
+
+/* Media Quary */
+
+/* @media only screen and (max-width: 600px) {
+  .hero-content {
+    display: none;
+  }
+} */
