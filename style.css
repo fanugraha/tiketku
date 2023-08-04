@@ -71,6 +71,7 @@ a {
 /* Navbar End */
 
 /* Hero Start */
+
 .hero-content {
   width: 100%;
   height: 773px;
@@ -92,7 +93,7 @@ a {
 .hero-headline {
   text-align: center;
   font: 700 50px/150% "Lato", sans-serif;
-  width: 1076px;
+  width: 800px;
   margin: 0;
   color: white;
 }
