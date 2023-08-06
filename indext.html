@@ -20,13 +20,13 @@
     <!-- Hero section setart -->
     <div class="hero-section">
       <!-- Navbar Start -->
-      <div class="container navbar">
+      <nav class="container navbar">
         <!-- Left Start-->
         <div class="nav-left">
           <div class="logo"><a href="#">Tiketku</a></div>
           <ul class="navbar-ul">
             <li class="nav-list"><a href="#">Home</a></li>
-            <li class="nav-list"><a href="#">Blog</a></li>
+            <li class="nav-list"><a href="#">Ticket</a></li>
             <li class="nav-list"><a href="#">About Us</a></li>
           </ul>
         </div>
@@ -43,15 +43,43 @@
           </button>
         </div>
         <!-- Right End -->
-      </div>
+      </nav>
       <!-- Navbar End -->
 
       <!-- Hero content Start -->
       <div class="hero-content">
         <div class="content-hero">
-          <p class="fs-1 hero-headline">
+          <p class="hero-headline">
             Jelajahi 38 Destinasi Indonesia dari Sabang Sampai Merauke!
           </p>
+          <!-- Seacrh Tablet Start -->
+          <div class="container wrapper-tablet">
+            <div class="search">
+              <svg
+                class="uniq-icons-interface-outline-search-02"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 18.5L22.5 22M21.5 11.5C21.5 6.25329 17.2467 2 12 2C6.75329 2 2.5 6.25329 2.5 11.5C2.5 16.7467 6.75329 21 12 21C17.2467 21 21.5 16.7467 21.5 11.5Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <input
+                type="text"
+                placeholder="Staycation di Bali"
+                class="search-tablet"
+              />
+            </div>
+          </div>
+          <!-- Search Tablet End -->
           <div class="hero-user-fill-content">
             <!-- Fillter Feature Start-->
             <div class="filter">
@@ -338,175 +366,37 @@
 
     <!-- Promo section star -->
     <div class="container promo-section">
-      <p class="fs-1 headline">Best deals for a price-less travel!</p>
-
-      <!-- Promo filter Start -->
-      <div class="promo-filter">
-        <button class="planes-tag">
-          <svg
-            class="plane"
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_45_135)">
-              <path
-                d="M13.7487 18.3808C14.0511 18.1115 14.279 18.5383 14.279 18.5383L16.3258 21.6291L19.6113 28.9501C20.6057 27.9558 20.5518 27.6948 20.4938 27.2887L18.3559 14.2956C18.3559 14.2956 20.6388 11.6067 22.8306 9.41494C23.8457 8.39986 25.5775 5.6902 24.9436 5.05629C24.3097 4.42238 21.5669 6.18738 20.585 7.16932C18.5051 9.24921 15.7043 11.644 15.7043 11.644L2.71119 9.50609C2.20986 9.41908 2.0027 9.43565 1.04976 10.3886L8.3708 13.6742L11.4575 15.7168C11.4575 15.7168 11.8842 15.9446 11.6149 16.2471C11.3456 16.5495 8.70226 19.0603 7.62917 20.7217C7.48416 20.9413 7.33086 20.8129 7.1237 20.8295L3.6144 20.0381C3.46525 20.0464 3.20837 20.237 3.20837 20.237L2.40044 20.962L5.88074 23.1165L5.05209 24.9395L6.8751 24.1109L9.02957 27.5912L9.75463 26.7832C9.75877 26.7874 9.94936 26.5305 9.95765 26.3814L9.1663 22.8721C9.18287 22.6649 9.05443 22.5116 9.27402 22.3666C10.9272 21.2852 13.4462 18.6501 13.7487 18.3808Z"
-                fill="white"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_45_135">
-                <rect
-                  width="30"
-                  height="30"
-                  fill="white"
-                  transform="translate(30) rotate(90)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-          <div class="text-active">Pesawat</div>
-        </button>
-        <button class="hotels-tag">
-          <svg
-            class="ion-bed"
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M23.625 12.6164C23.0734 12.3743 22.4774 12.2495 21.875 12.25H6.125C5.52262 12.2494 4.92669 12.374 4.375 12.6159C3.59527 12.9568 2.93176 13.5176 2.46558 14.2296C1.9994 14.9416 1.75075 15.774 1.75 16.625V22.75C1.75 22.9821 1.84219 23.2046 2.00628 23.3687C2.17038 23.5328 2.39294 23.625 2.625 23.625C2.85706 23.625 3.07962 23.5328 3.24372 23.3687C3.40781 23.2046 3.5 22.9821 3.5 22.75V22.3125C3.50142 22.1969 3.54797 22.0865 3.62971 22.0047C3.71145 21.923 3.82191 21.8764 3.9375 21.875H24.0625C24.1781 21.8764 24.2885 21.923 24.3703 22.0047C24.452 22.0865 24.4986 22.1969 24.5 22.3125V22.75C24.5 22.9821 24.5922 23.2046 24.7563 23.3687C24.9204 23.5328 25.1429 23.625 25.375 23.625C25.6071 23.625 25.8296 23.5328 25.9937 23.3687C26.1578 23.2046 26.25 22.9821 26.25 22.75V16.625C26.2491 15.7741 26.0004 14.9418 25.5343 14.2299C25.0681 13.518 24.4046 12.9574 23.625 12.6164V12.6164ZM20.5625 4.375H7.4375C6.62527 4.375 5.84632 4.69766 5.27199 5.27199C4.69766 5.84632 4.375 6.62527 4.375 7.4375V11.375C4.37502 11.4089 4.38293 11.4423 4.39808 11.4726C4.41324 11.503 4.43524 11.5294 4.46234 11.5497C4.48944 11.5701 4.5209 11.5839 4.55424 11.59C4.58758 11.5961 4.62189 11.5944 4.65445 11.585C5.13213 11.4453 5.62732 11.3746 6.125 11.375H6.35633C6.41032 11.3753 6.46253 11.3557 6.50292 11.3199C6.5433 11.284 6.569 11.2345 6.57508 11.1809C6.6228 10.7533 6.82635 10.3583 7.14683 10.0713C7.46732 9.78432 7.88229 9.62544 8.3125 9.625H11.375C11.8055 9.62503 12.2209 9.78374 12.5417 10.0708C12.8625 10.3578 13.0663 10.753 13.1141 11.1809C13.1201 11.2345 13.1458 11.284 13.1862 11.3199C13.2266 11.3557 13.2788 11.3753 13.3328 11.375H14.6705C14.7245 11.3753 14.7767 11.3557 14.8171 11.3199C14.8574 11.284 14.8831 11.2345 14.8892 11.1809C14.9369 10.7536 15.1402 10.3588 15.4604 10.0719C15.7805 9.78491 16.1951 9.62584 16.625 9.625H19.6875C20.118 9.62503 20.5334 9.78374 20.8542 10.0708C21.175 10.3578 21.3788 10.753 21.4266 11.1809C21.4326 11.2345 21.4583 11.284 21.4987 11.3199C21.5391 11.3557 21.5913 11.3753 21.6453 11.375H21.875C22.3727 11.3748 22.8679 11.4457 23.3455 11.5855C23.3782 11.595 23.4125 11.5967 23.4459 11.5905C23.4793 11.5844 23.5108 11.5705 23.5379 11.5501C23.565 11.5297 23.587 11.5032 23.6021 11.4728C23.6172 11.4424 23.6251 11.4089 23.625 11.375V7.4375C23.625 6.62527 23.3023 5.84632 22.728 5.27199C22.1537 4.69766 21.3747 4.375 20.5625 4.375Z"
-              fill="#0D99FF"
-            />
-          </svg>
-
-          <div class="text-unactive">Hotel</div>
-        </button>
-        <button class="trains-tag">
-          <svg
-            class="train"
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_45_143)">
-              <path
-                d="M4.66675 18.0834C4.66675 20.3409 6.49841 22.1667 8.75008 22.1667L7.00008 23.9167V24.5H21.0001V23.9167L19.2501 22.1667C21.5076 22.1667 23.3334 20.3409 23.3334 18.0834V5.83335C23.3334 1.75002 19.1567 1.16669 14.0001 1.16669C8.84341 1.16669 4.66675 1.75002 4.66675 5.83335V18.0834ZM14.0001 19.8334C12.7109 19.8334 11.6667 18.7892 11.6667 17.5C11.6667 16.2109 12.7109 15.1667 14.0001 15.1667C15.2892 15.1667 16.3334 16.2109 16.3334 17.5C16.3334 18.7892 15.2892 19.8334 14.0001 19.8334ZM21.0001 11.6667H7.00008V5.83335H21.0001V11.6667Z"
-                fill="#0d99ff"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_45_143">
-                <rect width="28" height="28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-
-          <div class="text-unactive">Train</div>
-        </button>
-      </div>
-      <!-- Promo filter end -->
+      <p class="headline">Best deals for a price-less travel!</p>
 
       <!-- Carousel Start -->
-      <div class="container carousel">
-        <button class="btn-next">
-          <svg
-            class="uniq-icons-arrows-outline-arrow-left"
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_d_45_236)">
-              <path
-                d="M20.8333 16.6667L12.5 25M12.5 25L20.8333 33.3334M12.5 25L37.5 25"
-                stroke="#0d99ff"
-                stroke-width="3.125"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_45_236"
-                x="-10"
-                y="-1.66667"
-                width="70"
-                height="70"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="8.33333" />
-                <feGaussianBlur stdDeviation="5" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_45_236"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_45_236"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </button>
-        <img
-          src="D:\Frontend\Mini project\Media\promo-1.jpg"
-          class="img-thumbnail promo-img"
-          alt="..."
-        />
-        <img
-          src="D:\Frontend\Mini project\Media\promo-2.jpg"
-          class="img-thumbnail promo-img"
-          alt="..."
-        />
-        <img
-          src="D:\Frontend\Mini project\Media\promo-3.jpg
-          "
-          class="img-thumbnail promo-img"
-          alt="..."
-        />
-        <button class="btn-next">
-          <svg
-            class="uniq-icons-arrows-outline-arrow-left"
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M29.1667 16.6667L37.5 25M37.5 25L29.1667 33.3334M37.5 25L12.5 25"
-              stroke="#0d99ff"
-              stroke-width="3.125"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" style="margin-top: 30px">
+          <div class="carousel-item active">
+            <img
+              src="D:\Frontend\Mini Project\Media\Tablet\promo 1.png"
+              class="d-block w-100 carousel-promo"
+              alt="..."
             />
-          </svg>
-        </button>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="D:\Frontend\Mini Project\Media\Tablet\promo 2.png"
+              class="d-block w-100 carousel-promo"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="D:\Frontend\Mini Project\Media\Tablet\promo 3.png"
+              class="d-block w-100 carousel-promo"
+              alt="..."
+            />
+          </div>
+        </div>
       </div>
       <!-- Carousel End -->
     </div>
@@ -538,14 +428,18 @@
     <!-- Destinasi -------------------------------------------------------------------------------------------------- -->
 
     <!-- Rekomendasi destinasi start -->
-    <div class="container heading-section" style="padding: 0">
-      <p class="fs-1 headline">Top destination</p>
-      <p class="headline-paragraf">
-        Vacations to make your experience enjoyable in Indonesia!
-      </p>
+    <div
+      class="container d-flex justify-content-between align-items-center heading-section"
+      style="padding: 0"
+    >
+      <div>
+        <p class="headline">Top destination</p>
+        <p class="headline-paragraf">Vacations enjoyable in Indonesia!</p>
+      </div>
+      <a href="#" class="see-all-tablet">Lihat Semua</a>
     </div>
-    <!-- Card Start -->
-    <div class="container">
+    <!-- Card web and tablet Start -->
+    <div class="container card-web-tablet">
       <div class="row container-card" style="padding: 0">
         <div class="col" style="padding: 0">
           <div class="card destination-card">
@@ -728,17 +622,163 @@
         </div>
       </div>
     </div>
-    <!-- Card End -->
+    <!-- Card web and tablet End -->
+
+    <!-- card phone -->
+    <div class="container wrapper-card-phone">
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="lokasi-card-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-phone">Forrester Glamping Co Bogor</div>
+          <div class="paragraf-card-phone">1 Days</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="lokasi-card-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-phone">Forrester Glamping Co Bogor</div>
+          <div class="paragraf-card-phone">1 Days</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="lokasi-card-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-phone">Forrester Glamping Co Bogor</div>
+          <div class="paragraf-card-phone">1 Days</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="lokasi-card-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-phone">Forrester Glamping Co Bogor</div>
+          <div class="paragraf-card-phone">1 Days</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- card phone -->
     <!-- Rekomendasi destinasi end -->
 
     <!-- Hotels -------------------------------------------------------------------------------------------------- -->
 
     <!-- Hotels Start -->
-    <div class="container heading-section" style="padding: 0">
-      <p class="fs-1 headline">Villa and Resort in Indonesia</p>
-      <p class="headline-paragraf">
-        Discover Exquisite Villas and Resorts in Indonesia
-      </p>
+    <div
+      class="container d-flex align-items-center justify-content-between heading-section"
+      style="padding: 0"
+    >
+      <div>
+        <p class="headline">Villa and Resort in Indonesia</p>
+        <p class="headline-paragraf">Discover Exquisite Villas and Resorts</p>
+      </div>
+      <a href="#" class="see-all-tablet">Lihat Semua</a>
     </div>
     <!-- Fillter tag Start-->
     <div class="container d-flex fillter-hotels-loc">
@@ -749,18 +789,14 @@
         Lombok
       </button>
       <button type="button" class="btn btn-primary mycss-tag-secondary">
-        Bandung
-      </button>
-      <button type="button" class="btn btn-primary mycss-tag-secondary">
         Yogyakarta
       </button>
-      <button type="button" class="btn btn-primary mycss-tag-secondary">
-        Bogor
-      </button>
     </div>
+
     <!-- Filter tag end -->
     <!-- Card Start -->
-    <div class="container">
+    <!-- web and tablet card -->
+    <div class="container card-web-tablet">
       <div class="row container-card" style="padding: 0">
         <div class="col" style="padding: 0">
           <div class="card destination-card">
@@ -1009,6 +1045,217 @@
         </div>
       </div>
     </div>
+    <!-- Phone card -->
+    <div class="container wrapper-card-phone">
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-villa-phone">
+            Forrester Glamping Co Bogor
+          </div>
+        </div>
+        <div class="lokasi-card-villa-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+
+        <div class="rating-card-phone">
+          <svg
+            class="star-1"
+            width="16"
+            height="16"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.27051 0.0116577L7.61759 4.15756H11.9768L8.45014 6.71986L9.79722 10.8658L6.27051 8.30345L2.7438 10.8658L4.09088 6.71986L0.564169 4.15756H4.92342L6.27051 0.0116577Z"
+              fill="#FFE64B"
+            />
+          </svg>
+          <div class="text-rating-card-phone">8.5</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-villa-phone">
+            Forrester Glamping Co Bogor
+          </div>
+        </div>
+        <div class="lokasi-card-villa-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+
+        <div class="rating-card-phone">
+          <svg
+            class="star-1"
+            width="16"
+            height="16"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.27051 0.0116577L7.61759 4.15756H11.9768L8.45014 6.71986L9.79722 10.8658L6.27051 8.30345L2.7438 10.8658L4.09088 6.71986L0.564169 4.15756H4.92342L6.27051 0.0116577Z"
+              fill="#FFE64B"
+            />
+          </svg>
+          <div class="text-rating-card-phone">8.5</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-villa-phone">
+            Forrester Glamping Co Bogor
+          </div>
+        </div>
+        <div class="lokasi-card-villa-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+
+        <div class="rating-card-phone">
+          <svg
+            class="star-1"
+            width="16"
+            height="16"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.27051 0.0116577L7.61759 4.15756H11.9768L8.45014 6.71986L9.79722 10.8658L6.27051 8.30345L2.7438 10.8658L4.09088 6.71986L0.564169 4.15756H4.92342L6.27051 0.0116577Z"
+              fill="#FFE64B"
+            />
+          </svg>
+          <div class="text-rating-card-phone">8.5</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+      <div class="card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\card image 1.png"
+          alt=""
+          style="margin-top: 2px"
+        />
+        <div class="card-deskprisi-phone">
+          <div class="headline-card-villa-phone">
+            Forrester Glamping Co Bogor
+          </div>
+        </div>
+        <div class="lokasi-card-villa-phone">
+          <svg
+            class="location"
+            width="7"
+            height="8"
+            viewBox="0 0 7 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.437012 3.52033C0.437012 1.98704 1.71831 0.747742 3.26816 0.747742C4.82238 0.747742 6.10368 1.98704 6.10368 3.52033C6.10368 4.29297 5.82268 5.01028 5.36018 5.61827C4.84995 6.28891 4.22106 6.87323 3.51319 7.33188C3.35118 7.43788 3.20497 7.44588 3.02716 7.33188C2.31526 6.87323 1.68637 6.28891 1.18051 5.61827C0.717673 5.01028 0.437012 4.29297 0.437012 3.52033ZM2.33517 3.60665C2.33517 4.1203 2.75431 4.52429 3.26824 4.52429C3.7825 4.52429 4.20568 4.1203 4.20568 3.60665C4.20568 3.097 3.7825 2.67334 3.26824 2.67334C2.75431 2.67334 2.33517 3.097 2.33517 3.60665Z"
+              fill="#0D99FF"
+            />
+          </svg>
+          <div class="paragraf-lokasi-phono">Bogor</div>
+        </div>
+
+        <div class="rating-card-phone">
+          <svg
+            class="star-1"
+            width="16"
+            height="16"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.27051 0.0116577L7.61759 4.15756H11.9768L8.45014 6.71986L9.79722 10.8658L6.27051 8.30345L2.7438 10.8658L4.09088 6.71986L0.564169 4.15756H4.92342L6.27051 0.0116577Z"
+              fill="#FFE64B"
+            />
+          </svg>
+          <div class="text-rating-card-phone">8.5</div>
+        </div>
+        <div class="price-card-phone">
+          <span class="price-phone">Rp 1.205.000</span>
+          <span> </span>
+          <span class="durasi-phone">/malam</span>
+        </div>
+      </div>
+    </div>
     <!-- Card End -->
     <!-- Hotels End -->
 
@@ -1017,11 +1264,11 @@
     <!-- Journal artikel start -->
     <div class="container heading-journey" style="padding: 0">
       <h2>Journey Journal</h2>
-      <p class="fs-1 headline-journey">Our Blog and Articles</p>
+      <p class="headline-journey">Our Blog and Articles</p>
     </div>
-    <!-- card start -->
-    <div class="cotainer" style="margin-top: 50px">
-      <div class="container">
+    <!-- card web tablet start -->
+    <div class="cotainer wrapper-journey" style="margin-top: 50px">
+      <div class="container" style="padding: 0">
         <div class="row gap-lg-5">
           <div class="col">
             <div class="card mb-3 card-blog">
@@ -1150,6 +1397,50 @@
         </div>
       </div>
     </div>
+    <!-- card web tablet end -->
+    <!-- card phone start -->
+    <div class="container wrapper-journey-card-phone">
+      <div class="journey-card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\journey card.png"
+          alt=""
+        />
+        <div class="body-card-journey">
+          <div class="tag-text">Insight</div>
+          <div class="deskripsi-journey">
+            Exploring the World, One Adventure at a Time
+          </div>
+          <div class="paragraf-journey">
+            Li Europan lingues es membres del sam lor separat existentie es un
+            myth...
+          </div>
+          <button type="button" class="btn btn-primary btn-jouney-phone">
+            Read more
+          </button>
+        </div>
+      </div>
+      <div class="journey-card-phone">
+        <img
+          src="D:\Frontend\Mini Project\Media\phone\journey card.png"
+          alt=""
+        />
+        <div class="body-card-journey">
+          <div class="tag-text">Insight</div>
+          <div class="deskripsi-journey">
+            Exploring the World, One Adventure at a Time
+          </div>
+          <div class="paragraf-journey">
+            Li Europan lingues es membres del sam lor separat existentie es un
+            myth...
+          </div>
+          <button type="button" class="btn btn-primary btn-jouney-phone">
+            Read more
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- card phone end -->
+
     <!-- card end -->
     <!-- Journal artikel end -->
 
@@ -1158,10 +1449,10 @@
     <!-- Testimoni start -->
     <div class="container heading-journey" style="padding: 0">
       <h2>Testimonial</h2>
-      <p class="fs-1 headline-journey">What they say about us</p>
+      <p class="headline-journey">What they say about us</p>
     </div>
-    <!-- Card Start -->
-    <div class="container">
+    <!-- Card web tablet Start -->
+    <div class="container wrapper-testimoni">
       <div class="row testi-content">
         <div class="col">
           <div class="card testi-card">
@@ -1251,6 +1542,27 @@
         </div>
       </div>
     </div>
+    <!-- Card web tablet end -->
+
+    <!-- card phone start -->
+    <div class="container wrapper-testi-phone-card">
+      <div class="testi-phone-card">
+        <div class="profile-testi-phone">
+          <img
+            src="D:\Frontend\Mini Project\Media\phone\Profile 1.png"
+            alt=""
+          />
+          <div class="name-person">Desi Nurasiah</div>
+        </div>
+        <div class="text-testi">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+          purus sit amet luctus venenatis
+        </div>
+      </div>
+    </div>
+
+    <!-- card phone end -->
+
     <!-- Card End -->
     <!-- Testimoni end -->
 
@@ -1268,7 +1580,7 @@
         </p>
       </div>
 
-      <div class="links-conteiner">
+      <div class="links-conteiner-1">
         <p class="fs-5 footer-headline">Links</p>
         <ul class="links-list">
           <li class="footer-list">Discover</li>
@@ -1279,7 +1591,7 @@
         </ul>
       </div>
 
-      <div class="links-conteiner">
+      <div class="links-conteiner-2">
         <p class="fs-5 footer-headline">Services</p>
         <ul class="links-list">
           <li class="footer-list">About Us</li>
@@ -1290,7 +1602,7 @@
         </ul>
       </div>
 
-      <div class="links-conteiner">
+      <div class="links-conteiner-3">
         <p class="fs-5 footer-headline">Contact</p>
         <ul class="links-list">
           <li class="footer-list">Jakarta, Indonesia</li>
@@ -1302,5 +1614,10 @@
       </div>
     </div>
     <!-- Footer End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

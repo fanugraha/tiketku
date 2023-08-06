@@ -47,7 +47,9 @@
   font: 400 16px/150% "Lato", sans-serif;
 }
 
-a {
+.nav-left a,
+.nav-left ul li a,
+.nav-right ul a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -76,6 +78,39 @@ a:hover {
 /* Navbar End */
 
 /* Hero Start */
+.wrapper-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content-visibility: hidden;
+}
+
+.search {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.7);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 382px;
+  backdrop-filter: blur(5px);
+}
+
+.search input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.search input::placeholder {
+  color: #ffffff;
+  font: 500 14px/150% "Lato", sans-serif;
+}
 
 .hero-content {
   width: 100%;
@@ -353,22 +388,9 @@ p {
   font: 700 36px "Lato", sans-serif;
 }
 
-.promo-filter {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.planes-tag {
-  background: #0d99ff;
-  border-radius: 500px;
-  padding: 6px 16px 6px 16px;
-  display: flex;
-  gap: 2px;
-  align-items: center;
-  justify-content: flex-start;
-  border: none;
+.carousel-promo {
+  width: auto;
+  height: auto;
 }
 
 .text-active {
@@ -377,53 +399,10 @@ p {
   font: 500 16px/150% "Lato", sans-serif;
 }
 
-.hotels-tag {
-  background: #e9f5fe;
-  border-radius: 50px;
-  padding: 6px 16px 6px 16px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
-
-.trains-tag {
-  background: #e9f5fe;
-  border-radius: 50px;
-  padding: 6px 16px 6px 16px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
-
 .text-unactive {
   color: #0d99ff;
   text-align: left;
   font: 400 16px/150% "Lato", sans-serif;
-}
-
-.img-promo {
-  border-radius: 10px;
-  width: 358px;
-  height: 250px;
-}
-
-.carousel {
-  gap: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.promo-img {
-  border-radius: 10px;
-  width: 358px;
-  height: 250px;
-  border: none;
 }
 
 .btn-next {
@@ -435,7 +414,7 @@ p {
   background-color: white;
   border: none;
   border-radius: 50px;
-  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .fillter-see-all {
@@ -475,6 +454,13 @@ p {
 .heading-section {
   margin-top: 50px;
   padding: 0;
+}
+
+.see-all-tablet {
+  text-decoration: none;
+  color: #0d99ff;
+  font: 500 20px/150% "Lato", sans-serif;
+  content-visibility: hidden;
 }
 
 .headline-paragraf {
@@ -547,6 +533,75 @@ p {
   font: var(--textxs-regular, 400 12px/140% "Lato", sans-serif);
 }
 
+/* Rekomendasi desitinasi phone */
+.wrapper-card-phone {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+  overflow-x: auto;
+  content-visibility: hidden;
+}
+
+.wrapper-card-phone::-webkit-scrollbar {
+  width: 0;
+}
+
+.card-phone {
+  background: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: 0.5px;
+  width: 190px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.paragraf-lokasi-phono {
+  color: #0d99ff;
+  font: 400 10px/140% "Lato", sans-serif;
+}
+
+.card-deskprisi-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.headline-card-phone {
+  color: #333333;
+  font: 700 12px "Lato", sans-serif;
+  margin-top: 6px;
+}
+
+.paragraf-card-phone {
+  color: var(--gray-600, #636363);
+  font: 400 10px "Lato", sans-serif;
+}
+
+.price-phone {
+  color: #0d99ff;
+  font: 700 12px/140% "Lato", sans-serif;
+}
+
+.price-card-phone {
+  margin-top: 10px;
+}
+
+.durasi-phone {
+  color: #0d99ff;
+  font: 400 8px/140% "Lato", sans-serif;
+}
+
+.lokasi-card-phone {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+}
+
 /* Rekomendasi Destinasi End */
 
 /* Hotels Start */
@@ -602,7 +657,7 @@ p {
 
 /* Hotels end */
 
-/* Jouner start */
+/* Jouney start */
 h2 {
   color: #0d99ff;
   font: 600 20px/32px "Lato", sans-serif;
@@ -675,6 +730,57 @@ h2 {
   font: 700 16px/150% "Lato", sans-serif;
   border: none;
 }
+
+/* Joourney card phone */
+
+.wrapper-journey-card-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+  content-visibility: hidden;
+}
+.journey-card-phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tag-text {
+  color: #0d99ff;
+  font: 600 10px/16px "Lato", sans-serif;
+}
+
+.deskripsi-journey {
+  color: var(--forfont, #363636);
+  font: 600 12px "Lato", sans-serif;
+  width: 169.3px;
+  height: 34.34px;
+  margin-top: 10px;
+}
+
+.paragraf-journey {
+  color: var(--paragraph, #363636);
+  text-align: left;
+  font: 400 9.64px/14.46px "Lato", sans-serif;
+  position: relative;
+  width: 166.89px;
+  height: 27.11px;
+  margin-top: 2px;
+}
+
+.btn-jouney-phone {
+  background: #0d99ff;
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+  font: 600 10px "Montserrat", sans-serif;
+  border: none;
+  margin-top: 15px;
+}
+
 /* Journey end */
 
 /* Testimoni start */
@@ -682,6 +788,7 @@ h2 {
 .testi-content {
   margin-top: 50px;
 }
+
 .testi-card {
   width: 379;
   height: 197;
@@ -718,6 +825,40 @@ h2 {
   text-align: left;
   font: 400 16px/180% "Lato", sans-serif;
 }
+
+/* testi phone */
+.wrapper-testi-phone-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 150px;
+  content-visibility: hidden;
+}
+.profile-testi-phone {
+  display: flex;
+  gap: 12px;
+}
+
+.name-person {
+  color: #363636;
+  font: 700 16px/120% "Lato", sans-serif;
+}
+
+.text-testi {
+  color: #363636;
+  font: 400 14px/180% "Lato", sans-serif;
+  position: relative;
+  width: 359px;
+}
+
+.testi-phone-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* Testimoni end */
 
 /* Footer Start */
@@ -761,7 +902,19 @@ h2 {
   font: 700 19.2px/180% "Poppins", sans-serif;
 }
 
-.links-conteiner {
+.links-conteiner-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links-conteiner-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links-conteiner-2 {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -784,8 +937,259 @@ h2 {
 
 /* Media Quary */
 
-/* @media only screen and (max-width: 600px) {
-  .hero-content {
+/* Website */
+/* Website end */
+
+/* Taablet start */
+@media only screen and (max-width: 1200px) {
+  .hero-user-fill-content,
+  .links-conteiner-1,
+  .links-conteiner-2,
+  .navbar-ul {
     display: none;
   }
-} */
+
+  .hero-headline {
+    color: #ffffff;
+    text-align: center;
+    font: 700 30px/150% "Lato", sans-serif;
+    width: 575px;
+  }
+  .wrapper-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content-visibility: visible;
+  }
+  .hero-headline {
+    color: #ffffff;
+    text-align: center;
+    font: 700 30px/150% "Lato", sans-serif;
+    width: 700px;
+  }
+  .see-all-tablet {
+    text-decoration: none;
+    color: #0d99ff;
+    font: 500 20px/150% "Lato", sans-serif;
+    content-visibility: visible;
+  }
+  .fillter-see-all {
+    display: none;
+  }
+
+  .heading-journey {
+    margin-top: 50px;
+  }
+
+  .footer {
+    height: 300px;
+  }
+}
+
+/* Tablet end */
+
+/* Phone start */
+@media only screen and (max-width: 800px) {
+  .hero-user-fill-content,
+  .links-conteiner-1,
+  .links-conteiner-2 {
+    display: none;
+  }
+
+  .hero-section {
+    background-image: url(Media/bali-pagoda-indonesia.jpg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-content,
+  .content-hero {
+    height: auto;
+  }
+  .hero-headline {
+    color: #ffffff;
+    text-align: center;
+    font: 700 20px/150% "Lato", sans-serif;
+    width: 353px;
+    margin-top: 62px;
+  }
+  .wrapper-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content-visibility: visible;
+  }
+  .search {
+    width: 300px;
+  }
+
+  .logo {
+    font: 700 24px/150% "Roboto", sans-serif;
+    margin-right: 20px;
+  }
+  .nav-right .login-register-button {
+    display: none;
+  }
+
+  /* Promo */
+  .promo-section {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .headline {
+    font: 700 16px "Lato", sans-serif;
+  }
+
+  .headline-paragraf {
+    font: 400 12px/140% "Lato", sans-serif;
+  }
+
+  .carousel-promo {
+    width: 644px;
+    height: 180px;
+  }
+  .see-all-tablet {
+    font: 500 12px/150% "Lato", sans-serif;
+  }
+
+  .heading-section {
+    margin-top: 20px;
+  }
+
+  /* Destinasi */
+  .card-web-tablet {
+    display: none;
+  }
+  .card-web-tablet {
+    content-visibility: hidden;
+  }
+  .wrapper-card-phone {
+    content-visibility: visible;
+  }
+
+  .lokasi-card-phone {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .headline-card-phone {
+    color: #333333;
+    text-align: left;
+    font: 700 12px "Lato", sans-serif;
+    margin-top: 4px;
+  }
+
+  /* villa and resort */
+
+  .mycss-tag-primary {
+    font: 500 12px/150% "Lato", sans-serif;
+  }
+
+  .mycss-tag-secondar {
+    font: 400 12px/150% "Lato", sans-serif;
+  }
+
+  .text-rating-card-phone {
+    color: #363636;
+    font: 400 10px "Lato", sans-serif;
+  }
+
+  .rating-card-phone {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+  }
+
+  .lokasi-card-villa-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    gap: 4px;
+  }
+
+  .headline-card-villa-phone {
+    color: #333333;
+    font: 700 12px "Lato", sans-serif;
+    margin-top: 10px;
+  }
+  /* journey */
+  .warpper-jouney {
+    display: none;
+  }
+
+  h2 {
+    color: #0d99ff;
+    text-align: center;
+    font: 600 10px "Lato", sans-serif;
+  }
+
+  .headline-journey {
+    font: 600 16px "Lato", sans-serif;
+    width: auto;
+  }
+
+  .wrapper-journey {
+    display: none;
+  }
+
+  /* testimoni */
+  .testi-content-1 {
+    gap: 16px;
+  }
+  .testi-content-2 {
+    display: none;
+  }
+
+  .footer {
+    display: none !important;
+  }
+  .headline-card-testi {
+    font: 700 16px/120% "Lato", sans-serif;
+  }
+  .deskripsi-card-testi {
+    font: 400 16px/180% "Lato", sans-serif;
+  }
+
+  .wrapper-testimoni {
+    display: none;
+  }
+
+  .wrapper-journey-card-phone {
+    content-visibility: visible;
+  }
+  .wrapper-testi-phone-card {
+    content-visibility: visible;
+  }
+
+  /* rapikan padding */
+  .nav-left {
+    padding-left: 16px;
+  }
+
+  .headline {
+    padding-left: 16px;
+  }
+
+  .carousel-promo {
+    padding: 0 16px;
+  }
+
+  .headline-paragraf {
+    padding-left: 16px;
+  }
+
+  .see-all-tablet {
+    padding-right: 16px;
+  }
+
+  .fillter-hotels-loc {
+    margin-top: 20px;
+    padding: 0 16px;
+  }
+}
+
+/* Phone end */
