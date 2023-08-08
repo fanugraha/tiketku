@@ -59,20 +59,19 @@ a:hover {
   color: #0d99ff;
 }
 
-.logo {
-  color: white;
-  font: 700 32px/150% "Roboto", sans-serif;
-}
-
 .login-register-button {
   background-color: #0d99ff;
   border: none;
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
+  border: none;
+}
+
+.btn-login-text {
   color: #ffffff;
   text-align: center;
   font: 600 16px/150% "Lato", sans-serif;
-  border: none;
+  text-decoration: none;
 }
 
 /* Navbar End */
@@ -97,7 +96,7 @@ a:hover {
   gap: 8px;
   align-items: center;
   justify-content: flex-start;
-  width: 382px;
+  width: 500px;
   backdrop-filter: blur(5px);
 }
 
@@ -388,6 +387,9 @@ p {
   font: 700 36px "Lato", sans-serif;
 }
 
+.carousel {
+  margin-top: 20px;
+}
 .carousel-promo {
   width: auto;
   height: auto;
@@ -538,7 +540,7 @@ p {
   display: flex;
   margin-top: 30px;
   gap: 10px;
-  overflow-x: auto;
+  overflow-x: scroll;
   content-visibility: hidden;
 }
 
@@ -550,7 +552,7 @@ p {
   background: #ffffff;
   border-radius: 10px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.1);
   border-width: 0.5px;
   width: 190px;
   height: 230px;
@@ -834,7 +836,7 @@ h2 {
   justify-content: center;
   margin-top: 20px;
   height: 150px;
-  content-visibility: hidden;
+  display: none;
 }
 .profile-testi-phone {
   display: flex;
@@ -932,9 +934,53 @@ h2 {
   width: 281px;
   text-align: left;
 }
-
 /* Footer End */
 
+/* Navbar phone start */
+.navbar-phone {
+  background: #ffffff;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  visibility: hidden;
+}
+
+.wrapper-navbar-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navphone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-navbar-phone-unactive {
+  color: rgba(112, 118, 123, 0.3);
+  text-align: center;
+  font: 700 10px/35px "Nunito", sans-serif;
+  width: 60px;
+  height: 22px;
+}
+
+.text-navbar-phone-active {
+  color: #0d99ff;
+  text-align: center;
+  font: 700 10px/35px "Nunito", sans-serif;
+  width: 60px;
+  height: 22px;
+}
+/* Navbar phone end */
+
+/* ------------------------------------------- */
 /* Media Quary */
 
 /* Website */
@@ -983,6 +1029,9 @@ h2 {
 
   .footer {
     height: 300px;
+  }
+  .carousel {
+    margin-top: 20px;
   }
 }
 
@@ -1048,7 +1097,7 @@ h2 {
 
   .carousel-promo {
     width: 644px;
-    height: 180px;
+    height: 150px;
   }
   .see-all-tablet {
     font: 500 12px/150% "Lato", sans-serif;
@@ -1085,11 +1134,7 @@ h2 {
   /* villa and resort */
 
   .mycss-tag-primary {
-    font: 500 12px/150% "Lato", sans-serif;
-  }
-
-  .mycss-tag-secondar {
-    font: 400 12px/150% "Lato", sans-serif;
+    border: none;
   }
 
   .text-rating-card-phone {
@@ -1161,8 +1206,15 @@ h2 {
   .wrapper-journey-card-phone {
     content-visibility: visible;
   }
+
+  .journey-card-phone {
+    gap: 10px;
+  }
+
   .wrapper-testi-phone-card {
-    content-visibility: visible;
+    display: flex;
+    padding: 0;
+    margin-bottom: 100px;
   }
 
   /* rapikan padding */
@@ -1190,6 +1242,17 @@ h2 {
     margin-top: 20px;
     padding: 0 16px;
   }
-}
 
+  .carousel {
+    margin-top: 10px;
+  }
+
+  .navbar-phone {
+    visibility: visible;
+  }
+
+  .text-testi {
+    width: 300px;
+  }
+}
 /* Phone end */
