@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootsrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="stylesheet" href="booking-plane-page.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Left Start-->
+      <div class="container">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="#"
+              ><img src="D:\Frontend\Mini Project\Icon\Tiket 1.png" alt=""
+            /></a>
+          </div>
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb" style="margin: 0">
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-active" href="#">1. Pesanan</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                2. Bayar
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                3. Selesai
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <!-- Left End -->
+
+        <!-- Right Start -->
+        <div class="nav-right">
+          <img src="D:\Frontend\Mini Project\Icon\promo.png" alt="" />
+          <p class="text-navbar">Promo</p>
+        </div>
+        <!-- Right End -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- alert -->
+    <div class="alert alert-primary alert-time" role="alert">
+      <p class="text-white">Mohon selesaikan pesanan dalam</p>
+      <div class="countdown-wrapper">
+        <div class="time-countdowm">00</div>
+        <div class="pemisah">:</div>
+        <div class="time-countdowm">00</div>
+        <div class="pemisah">:</div>
+        <div class="time-countdowm">00</div>
+        <div class="pemisah">:</div>
+      </div>
+    </div>
+    <!-- alert
+     -->
+
+    <section class="section-detail-pesanan">
+      <div class="left-content">
+        <div class="wrapper-content">
+          <div class="contant-detail">
+            <img
+              src="D:\Frontend\Mini Project\Icon\Contact-Detail.png"
+              alt=""
+            />
+            <div class="heading-page-booking">Detail pemesanan</div>
+          </div>
+          <div class="alert-page">
+            <img src="D:\Frontend\Mini Project\Icon\peti-hadiah.png" alt="" />
+            <div class="paragraf-page-booking">
+              Log in atau buat akun sekarang untuk dapetin Blibli Tiket Points
+              dari transaksi ini!
+              <span><a href="login.html">Log in sekarang</a></span>
+            </div>
+          </div>
+          <div class="dua-fill-wrapper">
+            <div class="seperempat-fill">
+              <div class="paragraf-page-booking">Title</div>
+              <svg
+                class="vector-175-stroke"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.3356 1.03149C11.0769 0.708045 10.6049 0.655604 10.2815 0.914361L5.74997 4.53954L1.21849 0.91436C0.895046 0.655603 0.423077 0.708044 0.16432 1.03149C-0.0944377 1.35494 -0.0419961 1.82691 0.28145 2.08566L5.28145 6.08566C5.55536 6.30479 5.94458 6.30479 6.21849 6.08566L11.2185 2.08566C11.5419 1.82691 11.5944 1.35494 11.3356 1.03149Z"
+                  fill="#363636"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </div>
+            <div class="setengah-fil">
+              <input type="text" placeholder="Nama Depan" class="1/2-input" />
+              <div class="paragraf-page-booking">
+                Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)
+              </div>
+            </div>
+          </div>
+          <div class="full-fill" style="margin-top: 50px">
+            <input type="text" placeholder="Alamat Email" />
+            <div class="paragraf-page-booking">
+              E-ticket akan dikirim ke alamat Email ini
+            </div>
+          </div>
+          <div class="dua-fill-wrapper">
+            <div class="phone-list">
+              <img
+                src="D:\Frontend\Mini Project\Icon\Indonesia flag.png"
+                alt=""
+              />
+              <div class="paragraf-page-booking">(+62)</div>
+              <svg
+                style="margin-left: 30px"
+                class="vector-175-stroke"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.3356 1.03149C11.0769 0.708045 10.6049 0.655604 10.2815 0.914361L5.74997 4.53954L1.21849 0.91436C0.895046 0.655603 0.423077 0.708044 0.16432 1.03149C-0.0944377 1.35494 -0.0419961 1.82691 0.28145 2.08566L5.28145 6.08566C5.55536 6.30479 5.94458 6.30479 6.21849 6.08566L11.2185 2.08566C11.5419 1.82691 11.5944 1.35494 11.3356 1.03149Z"
+                  fill="#363636"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </div>
+            <div class="setengah-fil">
+              <input
+                type="text"
+                placeholder="Nomor Telepon"
+                class="1/2-input"
+              />
+              <div class="paragraf-page-booking">Nomor Telepon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="wrapper-content">
+          <div class="detail-penerbangan">
+            <div class="heading-page-booking">Penerbangan</div>
+          </div>
+          <div class="tujuan-penerbangan">
+            <div class="lok">
+              <div class="sub-heading-booking-page">Jakarta</div>
+              <div class="uniq-icons-arrows-solid-arrow-right">
+                <svg
+                  class="arrow-right"
+                  width="14"
+                  height="10"
+                  viewBox="0 0 14 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.5303 5.53033C13.8232 5.23744 13.8232 4.76256 13.5303 4.46967L9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967C8.17678 0.762563 8.17678 1.23744 8.46967 1.53033L11.1893 4.25H1C0.585787 4.25 0.25 4.58579 0.25 5C0.25 5.41421 0.585787 5.75 1 5.75H11.1893L8.46967 8.46967C8.17678 8.76256 8.17678 9.23744 8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033L13.5303 5.53033Z"
+                    fill="#333333"
+                  />
+                </svg>
+              </div>
+              <div class="sub-heading-booking-page">Surabaya</div>
+            </div>
+            <div class="heading-page-booking-blue">Detail</div>
+          </div>
+          <div class="detail-ticket">
+            <div class="kode-penerbangan">
+              <img src="D:\Frontend\Mini Project\Icon\lion.png" alt="" />
+              <div class="paragraf-light-page-booking">CGK - SUB</div>
+            </div>
+            <div class="paragraf-light-page-booking">|</div>
+            <div class="paragraf-light-page-booking">17, Agt 23</div>
+            <div class="paragraf-light-page-booking">|</div>
+            <div class="paragraf-light-page-booking">15.45</div>
+          </div>
+          <div class="kebijakan-tiket">
+            <div class="sub-heading-booking-page">Ketentuan tiket</div>
+            <div class="ketentuan">
+              <img src="D:\Frontend\Mini Project\Icon\refun.png" alt="" />
+              <div class="paragraf-light-page-booking">Bisa refun</div>
+            </div>
+            <div class="ketentuan">
+              <img src="D:\Frontend\Mini Project\Icon\reschedule.png" alt="" />
+              <div class="paragraf-light-page-booking">Bisa refun</div>
+            </div>
+          </div>
+          <div class="alert-discount">
+            <div class="paragraf-page-booking">
+              Kamu mendapatkan diskon <a href="#">IDR 300.000</a> untuk
+              pemesanan ini
+            </div>
+          </div>
+          <div class="total-payment">
+            <div class="heading-page-booking">Total pembayaran</div>
+            <div class="heading-page-booking-blue">IDR 800.000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
