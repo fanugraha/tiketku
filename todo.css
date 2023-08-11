@@ -16,7 +16,6 @@ header {
   background: #ffffff;
   border-radius: 10px;
   width: 1114px;
-  height: 240px;
   box-shadow: 0px 13px 50px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -140,3 +139,154 @@ p {
   color: #ffffff;
   font: 400 20px/140% "Lato", sans-serif;
 }
+
+.hero-headline {
+  display: none;
+}
+
+.feature-list {
+  display: none;
+}
+
+.headline-tablet {
+  display: none;
+}
+
+.heading-section {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper-fill-todo {
+    display: none;
+  }
+
+  .content-hero {
+    width: auto;
+  }
+
+  .hero-headline {
+    display: block;
+    width: 575px;
+  }
+
+  .section-feature {
+    display: none;
+  }
+
+  .headline-tablet {
+    color: #333333;
+    font: 700 36px "Lato", sans-serif;
+    margin-top: 50px;
+  }
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 30px;
+  }
+
+  .col-feature {
+    width: 110px;
+    height: 110px;
+  }
+
+  .row-feature {
+    display: flex;
+    gap: 45px;
+  }
+
+  .heading {
+    display: none;
+  }
+  .headline-tablet {
+    display: block;
+  }
+  .heading-section {
+    display: flex !important;
+  }
+  .wrapper-destinasi-2 {
+    display: none;
+  }
+
+  .wrapper-destinasi {
+    display: flex;
+    margin-top: 30px;
+    overflow-x: scroll;
+  }
+  .wrapper-destinasi::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper-tablet {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Phone start */
+@media only screen and (max-width: 700px) {
+  .hero-user-fill-content,
+  .links-conteiner-1,
+  .links-conteiner-2 {
+    display: none;
+  }
+
+  header {
+    height: 350px;
+  }
+  .content-hero {
+    width: auto;
+  }
+
+  .headline-tablet {
+    font: 700 16px/140% "Lato", sans-serif;
+  }
+
+  .hero-headline {
+    color: #ffffff;
+    text-align: center;
+    font: 700 16px/150% "Lato", sans-serif;
+    width: 353px;
+    margin-top: 62px;
+  }
+
+  .row-feature {
+    gap: 28px;
+  }
+
+  .col-feature {
+    width: 73px;
+    height: 73px;
+  }
+
+  .col-feature img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .col-feature p {
+    font: 400 12px/140% "Lato", sans-serif;
+  }
+
+  .wrapper-destinasi {
+    gap: 10px;
+  }
+
+  a .image img {
+    width: 116px;
+    height: 116px;
+  }
+
+  a .content .title {
+    font: 700 15px/140% "Lato", sans-serif;
+  }
+
+  a .content .paragraf {
+    font: 400 10px/140% "Lato", sans-serif;
+  }
+  .heading-journey {
+    margin-top: 30px;
+  }
+}
+
+/* Phone end */

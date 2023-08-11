@@ -766,10 +766,10 @@ h2 {
 .paragraf-journey {
   color: var(--paragraph, #363636);
   text-align: left;
-  font: 400 9.64px/14.46px "Lato", sans-serif;
+  font: var(--main-text-p-1400, 400 16px "Lato", sans-serif);
   position: relative;
-  width: 166.89px;
-  height: 27.11px;
+  width: 270px;
+  height: 27px;
   margin-top: 2px;
 }
 
@@ -1170,6 +1170,15 @@ h2 {
     color: #0d99ff;
     text-align: center;
     font: 600 10px "Lato", sans-serif;
+  }
+  .paragraf-journey {
+    color: var(--paragraph, #363636);
+    text-align: left;
+    font: var(--main-text-p-1400, 400 12px "Lato", sans-serif);
+    position: relative;
+    width: 200px;
+    height: 27px;
+    margin-top: 2px;
   }
 
   .headline-journey {
